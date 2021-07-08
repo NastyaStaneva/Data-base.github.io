@@ -67,12 +67,17 @@
 		$num20 = rand(0, $ls20_len-1);
 		$num21 = rand(0, $ls21_len-1);
 
-		$line1 = substr(strrchr($ls1[$num1]));
-	 	echo $line1;
-		$pos = strrchr($line1, ' ');
-		echo $pos;
-		$line1 = substr($line1, $pos);
-		echo $line1;
+		$line1 = $ls1[$num1];
+		$pos = strrpos($line1, 'Ответ');
+		$true_answ[$line1] = substr(0, $pos);
+
+		//$otvet_pos = strrpos($line,'Ответ');
+    		//$test_lines[] =substr( $line, 0, $otvet_pos);
+	 	//echo $line1;substr(strrchr(
+		//$pos = strrchr($line1, ' ');
+		//echo $pos;
+		//$line1 = substr($line1, $pos);
+		//echo $line1;
 		//       найти последний пробел 
 		//обрезать строку до последнего пробела    // извлечь строку с таким номером
 		$line2 = $ls2[$num2];
@@ -100,7 +105,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="test_e.css" rel="stylesheet" type="text/css" />
+	<link href="tstyle.css" rel="stylesheet" type="text/css" />
 	
 <title>Тест</title>
 </head>
@@ -202,17 +207,17 @@ text-align: center;
 </head>
 <body>
 	
-	<div class = all_files>
+	<div class = all_tasks>
 		<?php echo $line1; ?> 
-		<td><input type = "text" id ="line1" class = divfiles> </td>
+		<td><input type = "text" id =line1 class = divtask> </td>
 		<p><?php echo $line2; ?>
-		<td><input type = "text" id ="line2" ></td>
+		<td><input type = "text" id =line2 class = divtask></td>
 		<p><?php echo $line3; ?>
-		<td><input type = "text" id ="line3"  ></td>
+		<td><input type = "text" id =line3  class = divtask></td>
 		<p><?php echo $line4; ?>
-		<td><input type = "text" id ="line4"  ></td>
+		<td><input type = "text" id =line4  class = divtask></td>
 		<p><?php echo $line5; ?>
-		<td><input type = "text" id ="line5"  ></td>
+		<td><input type = "text" id =line5  class = divtask></td>
 	
 	<div id = divitog>
 		<input type="button" id = 'itog_btn' value="Подвести итог" >
