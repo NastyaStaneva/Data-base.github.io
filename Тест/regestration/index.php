@@ -1,14 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <?php
-  /*require ('dbconnect.php');*/
   
   require('dbconnect.php');
-  if (!isset($conn)){
-    die("Ошибка conn");
-  }
-
+  
   if(isset($_POST['email']) && isset($_POST['password'])) {
-    //die("Ошибка2");
     $last_name = $_POST['last_name'];
     $firs_name = $_POST['firs_name'];
     $patronymic = $_POST['patronymic'];
@@ -18,34 +13,46 @@
     $password = $_POST['password'];
     $password_snd = $_POST['password_snd'];
 
-    /*
-    $query = "INSERT INTO users (last_name, firs_name, patronymic, email, school, class, password, password_snd ) VALUES ('$last_name', '$firs_name', '$patronymic', '$email', '$school', '$class', '$password')";
-    */
-
-    //$res = mysqli_query($db, $query);
     $query = "INSERT INTO users ( last_name, firs_name, patronymic, email, school, class, password, password_snd) VALUES ( '$last_name','$firs_name', '$patronymic', '$email', '$school', '$class', '$password', '$password_snd')";
 
     $res = $conn->query($query);
     echo $res;
     if($res) {
         $ssmg = "Вы успешно зарегистрировались.";
+        setcookie('from', $ssmg);
 
     }
     else {
         $fsmg = "Ошибка. Возможно, вы ввели некоретные данные или такой пользователь уже существует.";
-        //echo '<script>window.location.href = "test_my.php";</script>';
         die($fsmg);
     }
-    $registr  = 1;
-    $regblock = 1;
+    //$registr  = 1;
+    //$registrblock = 1;
   }
 
-  else{
-    $registr = 0;  
-    $regblock = 0;
-  }
-  
+  //else{
+    //setcookie('from', 'first');
+    //$registr = 0;  
+    //$registrblock = 0;
+
+
+  //}
+
+   
 ?> 
+<?php
+  
+  if(isset($_COOKIE['from'])) {
+    $from = $_COOKIE['regirt'];
+    echo $from;
+  }
+  else {
+    $from = 'first';
+    echo $from;
+  }
+
+?> 
+<!DOCTYPE html >
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -130,7 +137,6 @@
 </head>
 <body BGCOLOR="#E6E6FA"> 
 
-
 <TR> <TD><img src="135152.jpg" width=1395 height=120</Td><TD></Td></TR>
 
 
@@ -144,18 +150,16 @@
           <li><a href="6.html">О нас</a></li>
         </ul>
       <li><a href="6.html">Личная информация</a></li>
-      <li><a href="#">Тесты</a>
+      
+        <li><a href="#">Тесты</a>
         <ul>
           <li><a href="test_my.php">Начать тест</a></li>
         </ul>
-
+  
       <li><a href="5.php">Вход</a></li>
-      <?php 
-        if ($regblock != 1)
-      ?>
+     
       <li><a href="4.php">Регистрация</a></li>
-
-      
+  <?php /*endif;*/ ?>
       </ul>
 
 	  <div class="text">
@@ -214,7 +218,7 @@
                 
 <?php
   
-  if($registr != 1):
+  /*if($registr != 1):*/
 
 ?>
 
@@ -228,7 +232,7 @@
  <a href="test3.html"><button style="width:33.3%">Тест 3</button></a>
 </div>
 
-<?php endif; ?>
+<?php /*endif;*/ ?>
 
 
 
