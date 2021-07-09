@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,70 +38,46 @@
 
      
       </ul>
-  </body>
-<body>
-<?php
-  require('dbconnect.php');
-  if(issert($_POST['email']) && issert($_POST['password'])) {
-    $last_name = $_POST['last_name'];
-    $first_name = $_POST['first_name'];
-    $patronymic = $_POST['patronymic'];
-    $email = $_POST['email'];
-    $school = $_POST['school'];
-    $class = $_POST['class'];
-    $password = $_POST['password'];
-
-    $query = "INSERT INTO users (last_name, first_name, patronymic, email, school, class, password) VALUES ('$last_name', '$first_name', '$patronymic', '$email', '$school', '$class', '$password')";
-
-    $res = mysqli_query($db, $query);
-
-    if($res) {
-        $ssmg = "Вы успешно зарегистрировались.";
-    }
-    else {
-        $fsmg = "Ошибка. Возможно, вы ввели некоретные данные или такой пользователь уже существует.";
-    }
-  }
-
-?>
 
   <div class="container">
     
-    <form class = "form-signin" method="POST">  
+    <form class = "form-signin" method="POST" action = "index.php" >  
     <h1>Регистрация</h1>
     <p>Пожалуйста, заполните эту форму для создания аккаунта.</p>
     <hr>
 
-  <?php if (isset($ssmg)){ ?> <div class = "alert alert-success" role = "alert"> <?php echo $ssmg;?> </div> <?php } ?>
+  <?php if (isset($ssmg)){ ?> <div class = "alert alert-success" role = "alert"> <?php echo $ssmg;?> </div> <?php } ?><a href = "index.php">Перейти на главную</a><br>
 
   <?php if (isset($fsmg)){ ?> <div class = "alert alert-danger" role = "alert"> <?php echo $fsmg;?> </div> <?php } ?>
  
 
     <label for="psw"><b>Фамилия</b></label>
-    <input type="text" placeholder="" name="psw" required>
+    <input type="text" placeholder="" name="last_name" required>
  
     <label for="psw"><b>Имя</b></label>
-    <input type="text" placeholder="" name="psw" required>
+    <input type="text" placeholder="" name="firs_name" required>
 
     <label for="psw"><b>Отчество</b></label>
-    <input type="text" placeholder="" name="psw" required>
+    <input type="text" placeholder="" name="patronymic" required>
  
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
 
     <label for="psw"><b>Школа</b></label>
-    <input type="text" placeholder="" name="psw" required>
+    <input type="text" placeholder="" name="school" required>
  
     <label for="psw"><b>Класс</b></label>
-    <input type="text" placeholder="" name="psw" required>
+    <input type="text" placeholder="" name="class" required>
 
     <label for="psw"><b>Пароль</b></label>
-    <input type="password" placeholder="Введите пароль" name="psw" required>
+    <input type="password" placeholder="Введите пароль" name="password" required>
     
 
     <label for="psw-repeat"><b>Повторите пароль</b></label>
-    <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
-    
+    <input type="password" placeholder="Повторите пароль" name="password_snd" required>
+ 
+    <input type="hidden"  name="registr" value=1>
+   
     <label>
       <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">  Запомнить меня
     </label>
@@ -108,11 +85,13 @@
     <p>Создав учетную запись, вы соглашаетесь с нашими Условиями и Конфиденциальностью.<a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
     <div class="clearfix">
-        <button type="button" class="cancelbtn">Отмена</button>
-        <button type="submit" class="signupbtn">Зарегистрироваться</button>
+        <button type="button"  class="cancelbtn">Отмена</button>
+        <button type="submit" name = "do_singup" class="signupbtn">Зарегистрироваться</button>
     </div>
   </div>
 </form>
+
+<a href = "index.php">Перейти на главную</a>
 
 </body>
 </html>
