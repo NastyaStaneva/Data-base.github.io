@@ -1,5 +1,33 @@
-<!DOCTYPE html>
+<?php
+  //регистрация. запись данных в бд
+  require('dbconnect.php');
+  
+  if(isset($_POST['email']) && isset($_POST['password'])) {
+    $last_name = $_POST['last_name'];
+    $firs_name = $_POST['firs_name'];
+    $patronymic = $_POST['patronymic'];
+    $email = $_POST['email'];
+    $school = $_POST['school'];
+    $class = $_POST['class'];
+    $password = $_POST['password'];
+    $password_snd = $_POST['password_snd'];
 
+    $query = "INSERT INTO users ( last_name, firs_name, patronymic, email, school, class, password, password_snd) VALUES ( '$last_name','$firs_name', '$patronymic', '$email', '$school', '$class', '$password', '$password_snd')";
+
+    $res = $conn->query($query);
+    if($res) {
+        $ssmg = "Вы успешно зарегистрировались.";
+
+    }
+    else {
+        $fsmg = "Ошибка. Возможно, вы ввели некоретные данные или такой пользователь уже существует.";
+        die($fsmg);
+    }
+    
+  }
+  
+?> 
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,7 +114,7 @@
 
     <div class="clearfix">
         <button type="button"  class="cancelbtn">Отмена</button>
-        <button type="submit" name = "do_singup" class="signupbtn">Зарегистрироваться</button>
+        <button type="submit" name = "do_singup" class="signupbtn" value="submit">Зарегистрироваться</button>
     </div>
   </div>
 </form>
