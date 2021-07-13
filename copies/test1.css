@@ -1,0 +1,44 @@
+body{
+	background-color: #E6E6FA;
+	font-size: large;
+	padding:20px;
+}
+div.divtask{
+	border: 1px solid #000;
+	border-radius: 10px;
+	width: 800px;
+	padding:10px;
+	background-color: #c9FFc9;
+	margin-bottom: 10px;
+}
+#divitog{
+	margin: 20px;	
+}
+#itog_text{
+	width: 820px;
+	border: 1px solid #000;	
+}
+.text_answ{
+	width: 80px;
+}
+
+#itog_count{
+	width: 40px;	
+}
+
+#test_name{
+	width: 100px;	
+}
+
+.count_result{
+	width: 40px;	
+}
+
+body.test_list{
+	padding-left: 40px;
+	background-color: #33cc33;
+}
+
+td{
+	padding-left: 20px;
+}

@@ -1,0 +1,89 @@
+<img src="16\photo\all/1.JPG" width=800 height=70>
+ <img src="16\photo\all/2.JPG" width=800 height=70> 
+ <img src="16\photo\all/3.JPG" width=800 height=70>
+ <img src="16\photo\all/4.JPG" width=800 height=70> 
+ <img src="16\photo\all/5.JPG" width=800 height=70> 
+ <img src="16\photo\all/6.JPG" width=800 height=70>
+ <img src="16\photo\all/7.JPG" width=800 height=70>
+ <img src="16\photo\all/8.JPG" width=800 height=70>
+ <img src="16\photo\all/9.JPG" width=800 height=70>
+ <img src="16\photo\all/10.JPG" width=800 height=70>
+<img src="16\photo\all/11.JPG" width=800 height=70>
+<img src="16\photo\all/12.JPG" width=800 height=70>
+<img src="16\photo\all/13.JPG" width=800 height=70>
+<img src="16\photo\all/14.JPG" width=800 height=70>
+<img src="16\photo\all/15.JPG" width=800 height=70>
+<img src="16\photo\all/16.JPG" width=800 height=70> 
+<img src="16\photo\all/17.JPG" width=800 height=70>
+<img src="16\photo\all/18.JPG" width=800 height=70>
+<img src="16\photo\all/19.JPG" width=800 height=70> 
+<img src="16\photo\all/20.JPG" width=800 height=70>
+<img src="16\photo\all/21.JPG" width=800 height=70> 
+<img src="16\photo\all/22.JPG" width=800 height=70> 
+<img src="16\photo\all/23.JPG" width=800 height=70>
+<img src="16\photo\all/24.JPG" width=800 height=70>
+<img src="16\photo\all/25.JPG" width=800 height=70>
+<img src="16\photo\all/26.JPG" width=800 height=70> 
+<img src="16\photo\all/27.JPG" width=800 height=70>
+<img src="16\photo\all/28.JPG" width=800 height=70>
+<img src="16\photo\all/29.JPG" width=800 height=70>
+<img src="16\photo\all/30.JPG" width=800 height=70>
+<img src="16\photo\all/31.JPG" width=800 height=70>
+<img src="16\photo\all/32.JPG" width=800 height=70>
+<img src="16\photo\all/33.JPG" width=800 height=70>
+<img src="16\photo\all/34.JPG" width=800 height=70>
+<img src="16\photo\all/35.JPG" width=800 height=70>
+<img src="16\photo\all/36.JPG" width=800 height=70>
+<img src="16\photo\all/37.JPG" width=800 height=70>
+<img src="16\photo\all/38.JPG" width=800 height=70> 
+<img src="16\photo\all/39.JPG" width=800 height=70>
+<img src="16\photo\all/40.JPG" width=800 height=70>
+<img src="16\photo\all/41.JPG" width=800 height=70>
+<img src="16\photo\all/42.JPG" width=800 height=70>
+<img src="16\photo\all/43.JPG" width=800 height=70>
+<img src="16\photo\all/44.JPG" width=800 height=70>
+<img src="16\photo\all/45.JPG" width=800 height=70> 
+<img src="16\photo\all/46.JPG" width=800 height=70>
+<img src="16\photo\all/47.JPG" width=800 height=70>
+<img src="16\photo\all/48.JPG" width=800 height=70>
+<img src="16\photo\all/49.JPG" width=800 height=70>
+<img src="16\photo\all/50.JPG" width=800 height=70>
+<img src="16\photo\all/51.JPG" width=800 height=70>
+<img src="16\photo\all/52.JPG" width=800 height=70> 
+<img src="16\photo\all/53.JPG" width=800 height=70>
+<img src="16\photo\all/54.JPG" width=800 height=70>
+<img src="16\photo\all/55.JPG" width=800 height=70>
+<img src="16\photo\all/56.JPG" width=800 height=70>
+<img src="16\photo\all/57.JPG" width=800 height=70>
+<img src="16\photo\all/58.JPG" width=800 height=70> 
+<img src="16\photo\all/59.JPG" width=800 height=70>
+<img src="16\photo\all/60.JPG" width=800 height=70>
+<img src="16\photo\all/61.JPG" width=800 height=70>
+<img src="16\photo\all/62.JPG" width=800 height=70> 
+<img src="16\photo\all/63.JPG" width=800 height=70>
+<img src="16\photo\all/64.JPG" width=800 height=70>
+<img src="16\photo\all/65.JPG" width=800 height=70>
+<img src="16\photo\all/66.JPG" width=800 height=70>
+<img src="16\photo\all/67.JPG" width=800 height=70> 
+<img src="16\photo\all/68.JPG" width=800 height=70>
+<img src="16\photo\all/69.JPG" width=800 height=70>
+<img src="16\photo\all/70.JPG" width=800 height=70>
+<img src="16\photo\all/71.JPG" width=800 height=70>
+<img src="16\photo\all/72.JPG" width=800 height=70>
+<img src="16\photo\all/73.JPG" width=800 height=70> 
+<img src="16\photo\all/74.JPG" width=800 height=70> 
+<img src="16\photo\all/75.JPG" width=800 height=70> 
+<img src="16\photo\all/76.JPG" width=800 height=70>
+<img src="16\photo\all/77.JPG" width=800 height=70>
+<img src="16\photo\all/78.JPG" width=800 height=70> 
+<img src="16\photo\all/79.JPG" width=800 height=70>
+<img src="16\photo\all/80.JPG" width=800 height=70>
+<img src="16\photo\all/81.JPG" width=800 height=70>
+<img src="16\photo\all/82.JPG" width=800 height=70> 
+<img src="16\photo\all/83.JPG" width=800 height=70>
+<img src="16\photo\all/84.JPG" width=800 height=70> 
+<img src="16\photo\all/85.JPG" width=800 height=70> 
+<img src="16\photo\all/86.JPG" width=800 height=70> 
+<img src="16\photo\all/87.JPG" width=800 height=70>
+<img src="16\photo\all/88.JPG" width=800 height=70>
+<img src="16\photo\all/89.JPG" width=800 height=70>

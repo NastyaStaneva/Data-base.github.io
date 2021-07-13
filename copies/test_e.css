@@ -1,0 +1,30 @@
+body{
+	background-color:#E6E6FA;
+	font-size: large;
+}
+div.divtask{
+	border: 1px solid #000;
+	border-radius: 10px;
+	width: 800px;
+	margin: 20px;
+	padding:10px;
+	background-color: #c9FFc9;
+}
+#divitog{
+	margin: 20px;	
+}
+#itog_text{
+	width: 820px;
+	border: 1px solid #000;	
+}
+.text_answ{
+	width: 80px;
+}
+.true_answ{
+	width: 60px;
+	display: none;
+}
+#itog_count{
+	margin-left: 10px;
+	width: 40px;	
+}

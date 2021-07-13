@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: ;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.text {
+    text-align:  center;
+}
+
+#navbar ul{
+    display: none;
+    background-color: #f90;
+    position: absolute;
+    top: 100%;
+}
+#navbar li:hover ul { display: block; }
+#navbar, #navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+      }
+
+#navbar {
+    height: 50px;
+    background-color: #666;
+    padding-left: 25px;
+    min-width: 470px;
+    }
+      
+#navbar li {
+    float: left;
+    position: relative;
+    height: 100%;
+    }
+    
+#navbar li a {
+    display: block;
+    padding: 6px;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    }
+      
+#navbar ul li { float: none; }
+#navbar li:hover { background-color: #f90; }
+#navbar ul li:hover { background-color: #666; }
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
